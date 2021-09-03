@@ -82,27 +82,32 @@ body{
     box-shadow: #949e9c 2px 5px 5px;
 	border-radius: 50%;
 }
-
 .container{
-    position: relative;
-    padding: 1rem 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    font-family: "Acme", sans-serif;
-    font-size: 1.3rem;
-    color: var(--primary-color);
     
+    position: relative;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    position: relative;
+    padding: 2rem 5rem;
+    margin: 2rem 2rem;
     
 }
 .container.details{
     
 }
 .details{
-    padding: 2rem 5rem;
-    margin: auto;
-	text-align: left;
-    text-decoration: none;
-    background-color: var(--box-background);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding: 2rem 1.75rem;
+    background-color: #2ab39a;
+    height: 100%;
+    border-radius: 1rem;
 }
 a {
     text-decoration: none;
@@ -111,11 +116,7 @@ a {
 .section{
     text-align: center;
 }
-.container{
-    padding: 2rem 5rem;
-    margin: auto;
-    position: relative;
-}
+
 .technology{
     padding: 2rem 5rem;
 
@@ -123,6 +124,7 @@ a {
 .container-foot{
     background-color: var(--box-background);
     position: relative;
+    margin-top: 3rem;
     /* align-content: center; */
 }
 .foot{
